@@ -14,8 +14,6 @@ function App() {
       <Header />
       <Container>
         <Slots /> 
-        <Slots /> 
-        <Slots />
         <br />
         <RepeatButton />
 
