@@ -8,17 +8,17 @@ export function Slots(){
 <>
 
 
-
+  <div class="Cards">
     <Card>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src="holder.js/100px180" height="200px%" width="100%" />
       <Card.Body>
         <Card.Title>TABULATOR</Card.Title>
         <Card.Text>
           Tabulator er min favoritt-tast på tastaturet.
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
       </Card.Body>
     </Card>
+  </div>
 </>
     )
 }

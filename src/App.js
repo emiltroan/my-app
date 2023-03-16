@@ -12,10 +12,9 @@ function App() {
     <div className="App">
       <Header />
       <Container>
+        <Slots /> 
+        <Slots /> 
         <Slots />
-        {number}
-
-        <Form.Control onChange={(e)=>{setNumber(e.target.value)}} />
 
       </Container>
     </div>
