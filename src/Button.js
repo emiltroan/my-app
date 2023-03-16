@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 
 export function RepeatButton(props) {
     return (
-      <button 
+      <button
         aria-label='Play again.' 
         id='repeatButton' 
         onClick={props.onClick}>
