@@ -1,6 +1,16 @@
+body{
+  background-image:url("the_worg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: darkgreen;
+
+}
+
 .App {
   text-align: center;
-  color:blue;
+  color:White;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 200%;
 }
 
 .App-logo {
@@ -41,4 +51,16 @@
 .Cards{
   display: inline-block;
   padding: 1%;
+}
+
+#repeatButton {
+  appearance: none;  
+  border: none;
+  background: url(https://andyhoffman.codes/random-assets/img/slots/repeat.png) transparent 0 0 no-repeat;
+  background-size: cover;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  cursor: pointer;
+  animation: 6s linear infinite spin;
 }

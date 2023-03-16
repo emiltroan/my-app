@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import React, {useState} from "react";
 import {Form} from "react-bootstrap"; 
 import {Slots} from "./Slots.js";
+import {RepeatButton} from "./Button.js"
 import "./App.css";
 function App() {
 
@@ -15,6 +16,8 @@ function App() {
         <Slots /> 
         <Slots /> 
         <Slots />
+        <br />
+        <RepeatButton />
 
       </Container>
     </div>
