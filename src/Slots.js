@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 
 export function Slots(){
 
-    const allSlots = ["Diamant", "Gull", "TABULATOR", "Emil", "Worgen"];
+    const allSlots = ["Diamant", "Gull", "TABULATOR", "Spiseri", "Worgen"];
 
     const [slot1, setSlot1] = useState("Diamant");
     const [slot2, setSlot2] = useState("Diamant");
