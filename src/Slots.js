@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Card from 'react-bootstrap/Card';
+import {Card, Button} from 'react-bootstrap';
 import "./images/Diamant.jpg";
 import {RepeatButton} from "./Button.js"
 
@@ -27,12 +27,27 @@ export function Slots(){
     const [slot2, setSlot2] = useState(allSlots[picker()]);
     const [slot3, setSlot3] = useState(allSlots[picker()]);
 
+    const [money, setMoney] = useState(0);
+
 
 
     function Spin(){
-        setSlot1(allSlots[picker()])
-        setSlot2(allSlots[picker()])
-        setSlot3(allSlots[picker()])
+          setMoney(money - 20);
+          setSlot1(allSlots[picker()])
+          setSlot2(allSlots[picker()])
+          setSlot3(allSlots[picker()])
+
+          if (slot1 === slot2 && slot2 === slot3){
+            setMoney(money + 100);
+          }
+
+          if (slot1 === slot2 && slot2 === slot3){
+            
+          }
+          
+         
+          
+
     }
 
     const roll = ()=>Spin();
@@ -49,6 +64,8 @@ export function Slots(){
           </div>
           <br />
           <RepeatButton onRoll={roll} />
+           <h2 style={{color: "white"}}> {money} </h2>
+           <Button onClick={()=> setMoney(money + 100   )}> Legg til 100  </Button>
         </>
     )
 }
