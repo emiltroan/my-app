@@ -27,6 +27,8 @@ export function Slots(){
     const [slot2, setSlot2] = useState(allSlots[picker()]);
     const [slot3, setSlot3] = useState(allSlots[picker()]);
 
+    const [money, setMoney] = useState(0);
+
 
 
     function Spin(){
@@ -49,6 +51,7 @@ export function Slots(){
           </div>
           <br />
           <RepeatButton onRoll={roll} />
+            <h2>{money}</h2>
         </>
     )
 }
